@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@nuxtjs/markdownit": "latest",
+    "nuxt": "^2.14.12"
+  }
+}
