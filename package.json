@@ -18,13 +18,6 @@
     "lint": "eslint . --ext js,vue",
     "test": "yarn lint && jest"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged",
-      "pre-push": "yarn test"
-    }
-  },
   "lint-staged": {
     "*.{js,vue}": [
       "eslint --fix"
@@ -35,14 +28,11 @@
     "raw-loader": "^4.0.2"
   },
   "devDependencies": {
-    "@types/markdown-it": "^12.0.0",
-    "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
     "@nuxtjs/eslint-config": "^5.0.0",
+    "@types/markdown-it": "^12.0.0",
     "eslint": "^7.15.0",
     "eslint-config-prettier": "^7.0.0",
     "eslint-plugin-prettier": "^3.3.0",
-    "husky": "^4.3.6",
     "jest": "^26.6.3",
     "lint-staged": "^10.5.3",
     "nuxt": "^2.14.12"
