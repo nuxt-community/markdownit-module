@@ -4,8 +4,8 @@
   "license": "MIT",
   "main": "index.js",
   "types": "index.d.ts",
-  "repository": "https://github.com/nuxt/modules",
-  "homepage": "https://github.com/nuxt/modules/tree/master/packages/markdownit",
+  "repository": "https://github.com/nuxt-community/markdownit-module",
+  "homepage": "https://github.com/nuxt-community/markdownit-module",
   "publishConfig": {
     "access": "public"
   },
