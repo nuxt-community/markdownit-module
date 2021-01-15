@@ -1,6 +1,9 @@
 {
+  "scripts": {
+    "dev": "nuxt"
+  },
   "dependencies": {
-    "@nuxtjs/markdownit": "latest",
+    "@nuxtjs/markdownit": "^1.2.10",
     "nuxt": "^2.14.12"
   }
 }
