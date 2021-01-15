@@ -3,5 +3,5 @@ module.exports = {
   render: {
     resourceHints: false
   },
-  modules: [require('../../lib/index')]
+  modules: ['../../src/module.ts']
 }

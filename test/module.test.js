@@ -1,4 +1,4 @@
-import { get, setupTest, expectModuleToBeCalledWith, getNuxt } from '@nuxt/test-utils'
+import { setupTest, getNuxt, expectModuleToBeCalledWith, expectModuleNotToBeCalledWith, get } from '@nuxt/test-utils'
 
 describe('markdownit module', () => {
   describe('setup plugin', () => {
@@ -21,7 +21,7 @@ describe('markdownit module', () => {
       delete options.injected
 
       expectModuleToBeCalledWith('addPlugin', {
-        src: expect.stringContaining('lib/plugin.js'),
+        src: expect.stringContaining('templates/plugin.js'),
         fileName: 'markdown-it.js',
         options
       })
@@ -65,6 +65,20 @@ describe('markdownit module', () => {
       test('breaks option', async () => {
         const { body } = await get('/breaks')
         expect(body).not.toContain("I'm a paragraph <br/> without line breaks")
+      })
+    })
+    describe('no injected configuration', () => {
+      setupTest({
+        server: true,
+        config: {
+          markdownit: {
+            injected: false
+          }
+        }
+      })
+
+      test('plugin should not be include', () => {
+        expectModuleNotToBeCalledWith('addPlugin')
       })
     })
   })

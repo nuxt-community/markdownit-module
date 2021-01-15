@@ -7,7 +7,7 @@ import hello from './hello.md'
 
 export default {
   computed: {
-    hello() {
+    hello () {
       return hello
     }
   }

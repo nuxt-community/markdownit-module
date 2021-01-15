@@ -5,4 +5,4 @@ dist
 .nuxt
 
 # Module
-lib/plugin.js
+templates/*

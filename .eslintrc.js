@@ -1,3 +1,6 @@
 module.exports = {
-  extends: ['@nuxtjs', 'plugin:nuxt/recommended']
+  extends: ['@nuxtjs/eslint-config-typescript'],
+  rules: {
+    'vue/no-v-html': 'off'
+  }
 }

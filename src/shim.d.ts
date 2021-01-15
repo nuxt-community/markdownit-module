@@ -15,7 +15,7 @@ declare module 'vue/types/vue' {
   }
 }
 
-declare module "vuex/types/index" {
+declare module 'vuex/types/index' {
   interface Store<S> {
     $md: MarkdownIt
   }
