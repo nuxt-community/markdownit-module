@@ -3,4 +3,4 @@ coverage
 dist
 .nuxt
 *.log*
-src/runtime/plugin
+src/runtime/plugin.js
