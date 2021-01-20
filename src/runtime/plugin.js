@@ -2,14 +2,14 @@ import MarkdownIt from 'markdown-it'
 
 const handlePlugin = (plugin) => plugin.default || plugin
 
-export default ({ app }, inject) => {
+export default ({}, inject) => {
 <%
-const preset = options.preset || 'default'
-delete options.preset
-const plugins = options.use || []
-delete options.use
-options = serialize(options)
-options = options === '{}' ? undefined : options
+  const preset = options.preset || 'default'
+  delete options.preset
+  const plugins = options.use || []
+  delete options.use
+  options = serialize(options)
+  options = options === '{}' ? undefined : options
 %>
   const md = new MarkdownIt('<%= preset %>', <%= options %>)
 <%

@@ -1,4 +1,5 @@
-import MarkdownIt from 'markdown-it'
+import type { } from '@nuxt/types'
+import type MarkdownIt from 'markdown-it'
 
 declare module '@nuxt/types' {
   interface Context {
@@ -15,7 +16,8 @@ declare module 'vue/types/vue' {
   }
 }
 
-declare module "vuex/types/index" {
+declare module 'vuex/types/index' {
+  // eslint-disable-next-line
   interface Store<S> {
     $md: MarkdownIt
   }
