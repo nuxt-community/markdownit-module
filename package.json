@@ -1,18 +1,16 @@
 {
   "name": "@nuxtjs/markdownit",
   "version": "1.2.10",
-  "homepage": "https://github.com/nuxt-community/markdownit-module",
-  "repository": "https://github.com/nuxt-community/markdownit-module",
+  "homepage": "nuxt-community/markdownit-module",
   "license": "MIT",
   "main": "dist/module.js",
   "types": "dist/module.d.ts",
   "files": [
-    "dist",
-    "templates"
+    "dist"
   ],
   "scripts": {
-    "build": "siroc build",
-    "dev": "nuxt example",
+    "build": "siroc build && mkdist --src src/runtime --dist dist/runtime",
+    "dev": "nuxt test/fixture",
     "format": "yarn lint --fix",
     "lint": "eslint --ext .js,.ts,.vue .",
     "test": "yarn lint && jest"
@@ -38,7 +36,8 @@
     "eslint": "^7.15.0",
     "jest": "^26.6.3",
     "lint-staged": "^10.5.3",
-    "nuxt": "^2.14.12",
+    "mkdist": "^0.1.1",
+    "nuxt-edge": "^2.15.0-26851753.1f1db806",
     "siroc": "^0.6.0"
   },
   "publishConfig": {

@@ -1,17 +1,18 @@
-// https://github.com/BlueOakJS/markdownit-loader
-// https://github.com/markdown-it/markdown-it
 import { resolve, join } from 'path'
 import defu from 'defu'
-import type { Module } from '@nuxt/types'
 import { ModuleOptions, ModuleLoader, moduleDefaults } from './options'
+import './types'
 
-const markdownitModule: Module<ModuleOptions> = function (moduleOptions) {
-  const { extendBuild, addPlugin } = this
+// https://github.com/BlueOakJS/markdownit-loader
+// https://github.com/markdown-it/markdown-it
+
+function markdownitModule (moduleOptions) {
+  const { nuxt, extendBuild, addPlugin } = this
 
   // Merge all option sources
   const options: ModuleOptions = defu(
     moduleOptions,
-    this.options.markdownit,
+    nuxt.options.markdownit,
     moduleDefaults
   )
 
@@ -42,13 +43,13 @@ const markdownitModule: Module<ModuleOptions> = function (moduleOptions) {
 
     // Register plugin
     addPlugin({
-      src: resolve(__dirname, '../templates', 'plugin.js'),
-      fileName: join('markdown-it.js'),
+      src: resolve(__dirname, 'runtime/plugin.js'),
+      fileName: join('markdownit.js'),
       options
     })
   }
 }
 
-export default markdownitModule
+markdownitModule.meta = require('../package.json')
 
-module.exports.meta = require('../package.json')
+export default markdownitModule

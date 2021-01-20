@@ -6,7 +6,10 @@
 export default {
   data () {
     return {
-      model: '# Hello World!'
+      model: `
+      # Hello World!
+      (rendered using \`$md.render(...)\`)
+      `
     }
   }
 }

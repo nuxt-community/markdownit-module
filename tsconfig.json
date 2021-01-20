@@ -1,28 +1,12 @@
 {
   "compilerOptions": {
-    "strict": true,
     "target": "ESNext",
     "module": "ESNext",
-    "lib": [
-      "esnext",
-      "dom"
-    ],
     "esModuleInterop": true,
     "moduleResolution": "node",
-    "declaration": false,
-    "skipLibCheck": true,
-    "strictNullChecks": false,
-    "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
     "types": [
       "node",
-      "jest",
-      "@nuxt/types",
-      "./src/shim"
+      "jest"
     ]
-  },
-  "exclude": [
-    "node_modules",
-    "dist"
-  ]
+  }
 }

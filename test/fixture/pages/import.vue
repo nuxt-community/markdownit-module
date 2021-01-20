@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import hello from './hello.md'
+import hello from '~/markdown/hello.md'
 
 export default {
   computed: {

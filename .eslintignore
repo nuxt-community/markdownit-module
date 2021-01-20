@@ -1,8 +1,6 @@
-# Common
 node_modules
 coverage
 dist
 .nuxt
-
-# Module
-templates/*
+*.log*
+src/runtime/plugin

@@ -1,3 +1,5 @@
 <template lang="md">
-  # Hello World!
+  <div>
+    Welcome to markdownit demo
+  </div>
 </template>
