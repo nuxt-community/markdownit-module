@@ -7,7 +7,7 @@ describe('module (with config)', () => {
     server: true,
     config: {
       markdownit: {
-        injected: true,
+        runtime: true,
         preset: 'default',
         linkify: true,
         breaks: true,
@@ -42,7 +42,7 @@ describe('default configuration', () => {
   setupTest({
     config: {
       markdownit: {
-        injected: false
+        runtime: false
       }
     }
   })

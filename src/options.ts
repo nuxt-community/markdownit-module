@@ -1,5 +1,5 @@
 export interface ModuleOptions {
-  injected?: boolean
+  runtime?: boolean
   preset: string
   linkify: boolean
   breaks: boolean
@@ -12,7 +12,7 @@ export interface ModuleLoader {
 }
 
 export const moduleDefaults: ModuleOptions = {
-  injected: true,
+  runtime: true,
   preset: 'default',
   linkify: true,
   breaks: true,

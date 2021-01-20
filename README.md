@@ -76,7 +76,7 @@ Using [markdownit-loader](https://github.com/nuxt-community/markdownit-loader) a
     '@nuxtjs/markdownit'
   ],
   markdownit: {
-    injected: true
+    runtime: true // Support `$md()`
   }
 }
 ```

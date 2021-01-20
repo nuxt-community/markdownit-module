@@ -38,8 +38,8 @@ function markdownitModule (moduleOptions) {
     })
   })
 
-  if (options.injected === true) {
-    delete options.injected
+  if (options.runtime === true) {
+    delete options.runtime
 
     // Register plugin
     addPlugin({
