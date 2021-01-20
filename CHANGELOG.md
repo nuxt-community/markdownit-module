@@ -1,7 +1,28 @@
-# Change Log
+# Changelog
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## 2.0.0 (2021-01-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* update module (#23)
+
+### Features
+
+* update module ([#23](https://github.com/nuxt-community/markdownit-module/issues/23)) ([017b87e](https://github.com/nuxt-community/markdownit-module/commit/017b87e529839006a70c3d7417a71adf002fab44))
+* **markdownit:** add types for `$md` util ([#376](https://github.com/nuxt-community/markdownit-module/issues/376)) ([9059fbd](https://github.com/nuxt-community/markdownit-module/commit/9059fbd02bee237cde1820e4008388d07a983209))
+* **markdownit:** inject $md to app and vue instance ([#174](https://github.com/nuxt-community/markdownit-module/issues/174)) ([5d5f345](https://github.com/nuxt-community/markdownit-module/commit/5d5f345cb36976629d44fc3828d1e45746648a49))
+
+
+### Bug Fixes
+
+* **markdownit:** `preset` configuration value was ignored ([#340](https://github.com/nuxt-community/markdownit-module/issues/340)) ([bca0b63](https://github.com/nuxt-community/markdownit-module/commit/bca0b633d47a39b841a558ee7a1568a6ff03c57c))
+* **markdownit:** intropDefault for plugin imports ([#347](https://github.com/nuxt-community/markdownit-module/issues/347)) ([3c20807](https://github.com/nuxt-community/markdownit-module/commit/3c20807f17c8bfed2e5a3ac207f3c8831783cd66))
+* **markdownit:** prevent mutating options (fixes [#216](https://github.com/nuxt-community/markdownit-module/issues/216)) ([#348](https://github.com/nuxt-community/markdownit-module/issues/348)) ([44cf6e6](https://github.com/nuxt-community/markdownit-module/commit/44cf6e6684d0ad2f95827ba666b60efc855c41a9))
+* **markdownit:** typo ([#351](https://github.com/nuxt-community/markdownit-module/issues/351)) ([44d6bfc](https://github.com/nuxt-community/markdownit-module/commit/44d6bfcbff946b801f1885c7365bbb75c91095aa)), closes [#349](https://github.com/nuxt-community/markdownit-module/issues/349)
+* correct homepage URLs ([#282](https://github.com/nuxt-community/markdownit-module/issues/282)) ([b93aed6](https://github.com/nuxt-community/markdownit-module/commit/b93aed6afa8bea33282723fdc34381d74f44d6c3))
 
 ## [1.2.10](https://github.com/nuxt/modules/compare/@nuxtjs/markdownit@1.2.9...@nuxtjs/markdownit@1.2.10) (2020-07-14)
 
