@@ -1,7 +1,7 @@
 {
   "name": "@nuxtjs/markdownit",
   "version": "2.0.0",
-  "homepage": "https://github.com/nuxt-community/markdownit-module",
+  "repository": "nuxt-community/markdownit-module",
   "license": "MIT",
   "main": "dist/module.js",
   "types": "dist/module.d.ts",
