@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@nuxtjs/markdownit-loader": "^1.1.1",
-    "defu": "^3.2.2",
+    "defu": "^5.0.0",
     "raw-loader": "^4.0.2"
   },
   "devDependencies": {
