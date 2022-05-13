@@ -99,11 +99,9 @@ export default {
 
 ```
 
-#### Overriding temporarily markdown-ir options
+#### Overriding temporarily markdown-it options
 
-To use specific options "on the fly", you can proceed by altering temporary, the `$md.options` flags.
-
-> Note : usage of $md.render require the usage of `markdownit: { runtime: true }` in `nuxt.config.js`
+To use specific options "on the fly", you can proceed by altering temporarily, the `$md.options` flags.
 
 `hello.vue`:
 ```html
