@@ -98,3 +98,44 @@ export default {
 </script>
 
 ```
+
+#### Overriding temporarily markdown-ir options
+
+To use specific options "on the fly", you can proceed by altering temporary, the `$md.options` flags.
+
+> Note : usage of $md.render require the usage of `markdownit: { runtime: true }` in `nuxt.config.js`
+
+`hello.vue`:
+```html
+<template>
+  <div v-html="rendered" />
+</template>
+
+<script>
+export default {
+  props: {
+    markdown: { type: String, required: true },
+    options: { type: Object, default: null },
+  },
+  computed: {
+    rendered() {
+      const md = this.$md;
+      let backupOptions;
+      if (this.options) {
+        // Backup initial preset
+        backupOptions = Object.assign({}, md.options);
+        // Overrides options with props ones
+        Object.assign(md.options, this.options);
+      }
+      // Render
+      const rendered = md.render(this.markdown);
+      if (this.options) {
+        // Restore backuped options
+        md.options = backupOptions;
+      }
+      return rendered;
+    },
+  },
+}
+</script>
+```
