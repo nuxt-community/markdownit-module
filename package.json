@@ -8,6 +8,10 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nuxt-community/markdownit-module.git"
+  },
   "scripts": {
     "build": "siroc build && mkdist --src src/runtime --dist dist/runtime",
     "dev": "nuxt test/fixture",
