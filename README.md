@@ -22,7 +22,17 @@ Using [markdownit-loader](https://github.com/nuxt-community/markdownit-loader) a
     breaks: true,
     use: [
       'markdown-it-div',
-      'markdown-it-attrs'
+      'markdown-it-attrs',
+      // if you need to set plugin option(s)
+      [
+        'markdown-it-link-attributes',
+        {
+          attrs: {
+            target: '_blank',
+            rel: 'noopener noreferrer',
+          },
+        },
+      ],
     ]
   }
 }
