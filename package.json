@@ -17,22 +17,22 @@
     "test": "yarn lint && jest"
   },
   "dependencies": {
-    "@nuxtjs/markdownit-loader": "^1.1.1",
+    "@nuxtjs/markdownit-loader": "^1.2.0",
     "defu": "^3.2.2",
     "raw-loader": "^4.0.2"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.12.11",
-    "@babel/preset-typescript": "^7.12.7",
-    "@nuxt/test-utils": "^0.1.2",
-    "@nuxt/types": "^2.14.12",
+    "@babel/preset-env": "^7.25.9",
+    "@babel/preset-typescript": "^7.25.9",
+    "@nuxt/test-utils": "^0.2.2",
+    "@nuxt/types": "^2.18.1",
     "@nuxtjs/eslint-config-typescript": "^5.0.0",
-    "@types/markdown-it": "^12.0.1",
-    "eslint": "^7.18.0",
+    "@types/markdown-it": "^12.2.3",
+    "eslint": "^7.32.0",
     "jest": "^26.6.3",
-    "mkdist": "^0.1.1",
-    "nuxt-edge": "^2.15.0-26851753.1f1db806",
-    "siroc": "^0.6.2",
+    "mkdist": "^0.4.1",
+    "nuxt-edge": "^2.15.0-26889155.dd0eea40",
+    "siroc": "^0.16.0",
     "standard-version": "^9.1.0"
   },
   "publishConfig": {
