@@ -33,7 +33,7 @@
     "mkdist": "^0.1.1",
     "nuxt-edge": "^2.15.0-26851753.1f1db806",
     "siroc": "^0.6.2",
-    "standard-version": "^9.1.0"
+    "commit-and-tag-version": "^9.5.0"
   },
   "publishConfig": {
     "access": "public"
