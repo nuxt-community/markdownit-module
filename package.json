@@ -22,8 +22,8 @@
     "raw-loader": "^4.0.2"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.12.11",
-    "@babel/preset-typescript": "^7.12.7",
+    "@babel/preset-env": "^8.0.2",
+    "@babel/preset-typescript": "^8.0.1",
     "@nuxt/test-utils": "^0.1.2",
     "@nuxt/types": "^2.14.12",
     "@nuxtjs/eslint-config-typescript": "^5.0.0",
