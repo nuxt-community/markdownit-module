@@ -1,3 +1,6 @@
+> [!NOTE]
+> This repository is archived. `@nuxtjs/markdownit` was built for Nuxt 2, which reached end of life on June 30, 2024.
+
 # Markdownit for Nuxt 2
 [![npm](https://img.shields.io/npm/dt/@nuxtjs/markdownit.svg?style=flat-square)](https://npmjs.com/package/@nuxtjs/markdownit)
 [![npm (scoped with tag)](https://img.shields.io/npm/v/@nuxtjs/markdownit/latest.svg?style=flat-square)](https://npmjs.com/package/@nuxtjs/markdownit)
